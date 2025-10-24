@@ -1,27 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Os Melhores Jogos</title>
 
-  <!-- AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8336495523820700"
-    crossorigin="anonymous"></script>
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8335495523820700" crossorigin="anonymous"></script>
 
-  <!-- Fonte -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Manifest -->
+  <!-- PWA - Manifest -->
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#ff0000">
 
   <style>
     :root {
-      --bg: #0b0000;
-      --accent: #ff222a;
-      --light: #ffdde6;
+      --bg1:#0b0000;
+      --accent:#ff2a2a;
+      --light:#ffdede;
     }
 
     * { box-sizing: border-box; }
@@ -33,7 +31,7 @@
       color: #fff;
     }
 
-    /* Tela inicial */
+    /* Splash */
     #splash {
       position: fixed;
       inset: 0;
@@ -41,9 +39,9 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 20px;
+      gap: 18px;
       background: radial-gradient(circle at 30% 20%, rgba(120,0,0,0.08), transparent 20%);
-      z-index: 10;
+      z-index: 9999;
       text-align: center;
     }
 
