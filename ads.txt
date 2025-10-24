@@ -1,0 +1,3 @@
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+# Substitua o "pub-0000000000000000" pelo seu ID do AdSense quando tiver (exemplo: pub-1234567890123456)
+# Esse arquivo autoriza o Google a veicular anúncios no seu domínio OsMelhoresJogos.com

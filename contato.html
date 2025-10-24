@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Contato</title>
+<style>body{background:#120003;color:#fff;font-family:Arial;padding:22px}h1{color:#ff6060}label{display:block;margin-top:10px}input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #330000;background:#1a0000;color:#fff}button{margin-top:12px;padding:10px 18px;background:#ff4040;border:none;color:#fff;border-radius:8px;cursor:pointer}</style>
+</head>
+<body>
+  <h1>📩 Contato</h1>
+  <p>Envie mensagem para: <strong>jogoads14@gmail.com</strong></p>
+
+  <!-- Formulário simples que usa mailto como fallback.
+       Recomendado: usar FormSubmit ou outro serviço se quiser envio server-side.
+  -->
+  <form id="contactForm" action="mailto:jogoads14@gmail.com" method="post" enctype="text/plain">
+    <label>Nome</label><input name="name" required>
+    <label>E-mail</label><input name="email" type="email" required>
+    <label>Mensagem</label><textarea name="message" rows="6" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <p><button onclick="location.href='index.html'">Voltar</button></p>
+</body>
+</html>

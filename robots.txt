@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Bloqueia páginas administrativas (caso crie no futuro)
+Disallow: /admin/
+Disallow: /private/
+
+# Informa ao Google e outros buscadores onde está o sitemap
+Sitemap: https://osmelhoresjogos.com/sitemap.xml

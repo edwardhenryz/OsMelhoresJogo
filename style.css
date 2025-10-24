@@ -1,0 +1,107 @@
+/* 🌌 Fundo geral animado */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #0a001a, #000);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* ✨ Títulos principais */
+h1, h2 {
+  color: #b266ff;
+  text-shadow: 0 0 15px #9933ff, 0 0 30px #6600cc;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* 💬 Parágrafos */
+p {
+  color: #eaeaea;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+/* 🎮 Botão de login e sair */
+.google-btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #6a00ff, #9a33ff);
+  color: #fff;
+  border: none;
+  padding: 12px 22px;
+  font-size: 1em;
+  border-radius: 10px;
+  margin: 15px auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #9a33ff, 0 0 30px #6a00ff;
+  animation: pulsar 2s infinite;
+}
+
+.google-btn:hover {
+  background: linear-gradient(90deg, #b366ff, #8a00ff);
+  transform: scale(1.1);
+}
+
+/* 🔥 Efeito pulsante neon */
+@keyframes pulsar {
+  0%, 100% { box-shadow: 0 0 10px #b266ff, 0 0 20px #6600cc; }
+  50% { box-shadow: 0 0 20px #cc99ff, 0 0 40px #9900ff; }
+}
+
+/* 🧠 Grade de jogos */
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 25px;
+  padding: 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.game {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(162, 0, 255, 0.2);
+  cursor: pointer;
+}
+
+.game:hover {
+  transform: scale(1.1);
+  background: rgba(178, 102, 255, 0.2);
+  box-shadow: 0 0 20px #b266ff, 0 0 40px #6600cc;
+}
+
+.game img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+/* ⚡ Footer */
+footer {
+  margin-top: 20px;
+  color: #888;
+  font-size: 0.9em;
+  text-align: center;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+footer:hover {
+  opacity: 1;
+  color: #b266ff;
+  text-shadow: 0 0 10px #b266ff;
+}
+
+/* 🌀 Animação de entrada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h1, p, button {
+  animation: fadeIn 2s ease-in-out;
+}

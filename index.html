@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Os Melhores Jogos</title>
+
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- PWA - Manifest -->
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#ff0000">
+
+  <style>
+    :root {
+      --bg1:#0b0000;
+      --accent:#ff2a2a;
+      --light:#ffdede;
+    }
+
+    * { box-sizing: border-box; }
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #0b0000, #040002);
+      color: #fff;
+    }
+
+    /* Splash */
+    #splash {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      background: radial-gradient(circle at 30% 20%, rgba(120,0,0,0.08), transparent 20%);
+      z-index: 9999;
+      text-align: center;
+    }
+
+    #splash h1 {
+      font-size: 2.4rem;
+      color: var(--accent);
+      text-shadow: 0 0 18px rgba(255,0,0,0.3);
+    }
+
+    .logo-splash {
+      width: 90px;
+      height: 90px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+    }
+
+    /* Botão */
+    .btn-entrar {
+      padding: 12px 26px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 8px;
+      margin-top: 10px;
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+      transition: all 0.25s ease;
+    }
+
+    .btn-entrar:hover {
+      background: #ff4444;
+      box-shadow: 0 0 25px rgba(255, 50, 50, 0.7);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="splash">
+    <img src="assets/icons/favicon.png" alt="Logo OMJ" class="logo-splash">
+    <h1>Os Melhores Jogos</h1>
+    <a href="jogos.html" class="btn-entrar">Entrar no site</a>
+  </div>
+</body>
+</html>
