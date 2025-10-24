@@ -1,13 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Os Melhores Jogos</title>
 
   <!-- Google AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8335495523820700" crossorigin="anonymous"></script>
+  <script async 
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8383698523828070" 
+    crossorigin="anonymous"></script>
 
+  <!-- Fonte -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -17,17 +20,18 @@
 
   <style>
     :root {
-      --bg1:#0b0000;
-      --accent:#ff2a2a;
-      --light:#ffdede;
+      --bg1: #0b0000;
+      --accent: #ff2a2a;
+      --light: #ffdede;
     }
 
     * { box-sizing: border-box; }
+
     html, body {
       height: 100%;
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(180deg, #0b0000, #040002);
+      background: linear-gradient(180deg, var(--bg1), #040002);
       color: #fff;
     }
 
@@ -40,7 +44,7 @@
       align-items: center;
       justify-content: center;
       gap: 18px;
-      background: radial-gradient(circle at 30% 20%, rgba(120,0,0,0.08), transparent 20%);
+      background: radial-gradient(circle at 30% 20%, rgba(120, 0, 0, 0.08), transparent 20%);
       z-index: 9999;
       text-align: center;
     }
@@ -48,7 +52,7 @@
     #splash h1 {
       font-size: 2.4rem;
       color: var(--accent);
-      text-shadow: 0 0 18px rgba(255,0,0,0.3);
+      text-shadow: 0 0 18px rgba(255, 0, 0, 0.3);
     }
 
     /* Botão */
